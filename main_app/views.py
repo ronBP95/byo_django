@@ -20,6 +20,11 @@ def cats_index(request):
     cats = Cat.objects.all()
     return render(request, 'cats/index.html', { 'cats': cats })
 
+def cats_show(request, cat_id):
+    # we get access to that cat_id variable
+    # query for the specific cat clicked
+    cat = Cat.objects.get(id=cat_id)
+    return render(request, 'cats/show.html', { 'cat': cat })
 
 # Instrcutions
 # 1. Update index view function to look similar to the contact view function

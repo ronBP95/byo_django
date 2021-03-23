@@ -1,3 +1,11 @@
 h1 {
   color: tomato;
 }
+a, a:visited {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: tomato;
+}
