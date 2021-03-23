@@ -13,5 +13,8 @@
     <p>Breed: {{ cat.breed}}</p>
     <p>Description: {{ cat.description }}</p>
     <p>Age: {{ cat.age }}</p>
+        <!-- Add links for update and delete here... -->
+    <a class="update btn" href="{% url 'cats_update' cat.id %}">Update Details</a> |
+    <a class="delete btn" href="{% url 'cats_delete' cat.id %}">DELETE This Cat</a>
   </body>
 </html>

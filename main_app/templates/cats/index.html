@@ -11,6 +11,9 @@
 <body>
     <h1>All of the Cats</h1>
     <hr/>
+    <!-- Add link to create a new cat -->
+    <a href="/cats/create">Add a New Cat!</a>
+    <hr />
     {% for cat in cats %}
       <a href="/cats/{{cat.id}}">
         <p>Name: {{ cat.name }}</p>

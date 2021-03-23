@@ -9,3 +9,8 @@ a:hover {
   text-decoration: underline;
   color: tomato;
 }
+.btn {
+  padding: 2px;
+  transition: all .5s ease-in-out;
+  text-decoration: underline;
+}
